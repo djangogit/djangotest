@@ -1,0 +1,16 @@
+
+
+<h1> Note </h1>
+<ul>
+	<li>Each First Letter of Multiple Keyword Should Be in Caps</li>
+	<li>Use Comma as seperator in between Multiple Keywords</li>
+	<li>Don't Use any space after the seperator in Multiple Keyword Search</li>
+	
+</ul>
+<form action="." method="POST">
+	{% csrf_token %}
+	{{form.as_p}}
+	
+	<input type="submit" value="GIVE ME 007 POWER">
+</form>
+<a href="{% url 'user_logout' %}"><input type="button" value="LOGOUT"></a>
